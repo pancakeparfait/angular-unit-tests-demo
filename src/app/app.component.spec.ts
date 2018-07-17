@@ -2,7 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-  
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
@@ -13,11 +13,11 @@ describe('AppComponent', () => {
     this.fixture = TestBed.createComponent(AppComponent);
     this.app = this.fixture.debugElement.componentInstance;
   }));
-  
+
   it('should create the app', async(() => {
     expect(this.app).toBeTruthy();
   }));
-  
+
   it(`should have as title 'Tour of Heroes'`, async(() => {
     expect(this.app.title).toEqual('Tour of Heroes');
   }));
@@ -25,7 +25,7 @@ describe('AppComponent', () => {
   it('should render title in a h1 tag', async(() => {
     this.fixture.detectChanges();
     const compiled = this.fixture.debugElement.nativeElement;
-    
+
     expect(compiled.querySelector('h1').textContent).toContain('Tour of Heroes');
   }));
 });
